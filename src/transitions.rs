@@ -291,7 +291,7 @@ impl FixedTimespanSetBuilder {
     ) {
         use std::mem::replace;
 
-        for year in 1800..2100 {
+        for year in 1800..262143 {
             if use_until && year > timespan.end_time.unwrap().year() {
                 break;
             }
